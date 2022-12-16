@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.services{
+    min-height: 100vh;
+    text-align: center;
+    padding: 2% 6%;
+}
+.services h1{
+    font-size: 3.8rem;
+    padding: 0.5rem;
+    display: inline-block;
+    color: yellowgreen;
+    border-bottom: .3rem solid yellowgreen;
+    margin-bottom: 1.8rem;
+}
+.services .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.services .container .box{
+    width: 23rem;
+    height: 23rem;
+    margin: 1.5rem;
+    position: relative;
+    overflow: hidden;
+}
+.services .container .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.services .container .box .info{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transform-origin: bottom;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.services .container .box:hover .info{
+    transform: translate(-50%, -50%) scale(1);
+}
+.services .container .box .info h3{
+    font-size: 3rem;
+    color: yellowgreen;
+    margin-bottom: 1.2rem;
+}
+.services .container .box .info p{
+    line-height: 2;
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 0 1rem;
+    margin-bottom: 1.2rem;
+}
+.btn{
+    padding: 0.5rem 1.5rem;
+    background-color: transparent;
+    border: 0.3rem solid yellowgreen;
+    margin-top: 1.8rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    font-size: 2rem;
+}
+.btn:hover{
+    background-color: yellowgreen;
+    color: #fff;
+}
